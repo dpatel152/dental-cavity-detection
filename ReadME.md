@@ -1,6 +1,6 @@
-# Dental Cavity Detection — Final Capstone Submission
+# Dental Cavity Detection
 
-## 1. Overview (Nontechnical Summary)
+## 1. Overview
 
 This project explores the use of **artificial intelligence (AI)** to assist dentists in detecting cavities from dental X-rays. The system uses a deep learning model trained to find areas in X-ray images that may indicate decay, aiming to speed up diagnosis and improve consistency.
 
@@ -12,7 +12,7 @@ Early detection of dental cavities can prevent more serious dental problems. An 
 
 ---
 
-## 2. Key Results (Nontechnical)
+## 2. Key Results 
 - The AI correctly identified most cavities in the test images, with about **85% accuracy** and an **82% overall detection score**.
 - Works best on clear, high-contrast cavities.
 - Sometimes mistakes fillings or overlapping teeth for cavities.
@@ -23,7 +23,7 @@ Early detection of dental cavities can prevent more serious dental problems. An 
 1. **Training Data:**  
    - Labeled dental X-rays with cavities marked by experts (polygon annotations converted to bounding boxes).
 2. **Model:**  
-   - YOLOv5 small variant, pretrained on COCO, fine-tuned on our dental dataset.
+   - YOLOv8 small variant, pretrained on COCO, fine-tuned on our dental dataset.
 3. **Process:**  
    - Input: Dental X-ray  
    - Output: Bounding boxes around suspected cavities for dentist review
@@ -53,7 +53,7 @@ Early detection of dental cavities can prevent more serious dental problems. An 
 - **Annotations:** Expert-marked polygons → YOLO-format bounding boxes
 
 ### Model & Training
-- **Architecture:** YOLOv5s (Ultralytics)
+- **Architecture:** YOLOv8n (Ultralytics)
 - **Image size:** 640×640  
 - **Epochs:** E  
 - **Batch size:** 8  
